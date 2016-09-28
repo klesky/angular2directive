@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  color_options = ['black', 'red','green']
+  counter = 0
+
+  onBack(data){
+    if(Number(data) %2==0)
+      this.counter++;
+  }
 }
